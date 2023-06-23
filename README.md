@@ -11,4 +11,4 @@ git remote add origin https://github.com/boatxtream/next13.4-movies.git
 git push -u origin main
 
 ## get Api
-https://api.themoviedb.org/3/movie/popular?api_key=d3e9c2f7f664d95671153df6a8374554
+https://api.themoviedb.org/3/movie/popular?api_key=d3e9c2f7f664d95671153df6a8374554# next13.4.2-movies
