@@ -15,7 +15,7 @@ return (
     <div>
        
     <Link href={`/movie/${id}`}>
-        <div className=' overflow-hidden'> <Image className=' rounded-lg drop-shadow-xl transition duration-500 hover:scale-125   '
+        <div className=' overflow-hidden rounded-lg'> <Image className=' rounded-lg drop-shadow-xl transition duration-500 hover:scale-125  '
         src={imagePath + poster_path}
         width={800}
         height={800}
@@ -23,7 +23,7 @@ return (
         /></div>
        
     </Link>
-    <b className="text-ellipsis overflow-hidden line-clamp-1">{title}</b>
+    <b className="text-ellipsis overflow-hidden  line-clamp-1">{title}</b>
     <h2>{release_date}</h2>
 
     </div>

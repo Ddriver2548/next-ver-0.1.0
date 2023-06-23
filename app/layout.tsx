@@ -15,11 +15,15 @@ export const metadata = {
   description: 'โปรแกรมแสดงโปสเตอร์หนัง',
 }
 
-export default function RootLayout({
+export  default async function RootLayout({
+  
   children,
+  
 }: {
   children: React.ReactNode
 }) {
+
+ 
   return (
     <html lang="en">
       <body className={prompt.className}>
@@ -33,3 +37,11 @@ export default function RootLayout({
     </html>
   )
 }
+
+
+function delay(timeout: number) {
+  return new Promise((resolve) => {
+    setTimeout(resolve, timeout);
+  });
+}
+

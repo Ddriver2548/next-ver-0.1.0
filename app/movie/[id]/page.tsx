@@ -3,18 +3,26 @@ import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 
+
+
 type Props = {
     params: any;
 }
-
+function delay(timeout: number) {
+  return new Promise((resolve) => {
+    setTimeout(resolve, timeout);
+  });
+}
 export default async function MovieDetail({params}: Props) {
-    const rey = process.env.NEXT_PUBLIC_API_KEY
+    const key = process.env.NEXT_PUBLIC_API_KEY
     const { id } = params
     const imagePath = "https://image.tmdb.org/t/p/original"
     const data = await fetch(
-        `https://api.themoviedb.org/3/movie/${id}?api_key=${rey}`, {next: {revalidate: 10}}
+        `https://api.themoviedb.org/3/movie/${id}?api_key=${key}`, {next: {revalidate: 10}}
     );
+    await delay(2000);
     const res = await data.json();
+    
   return (
     <div className='flex justify-center text-center p-20'>
     <div>MovieDetail: {params.id}
