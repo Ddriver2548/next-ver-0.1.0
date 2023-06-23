@@ -9,8 +9,8 @@ return (
     <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
       <Link href="/" className="flex items-center">
         <Image
-          src="https://img.freepik.com/free-vector/colorful-aggressive-strong-tiger-head_225004-1576.jpg?w=740&t=st=1686897334~exp=1686897934~hmac=017ee68ae3c009a176939a9498e7c812427a189d32a706ddcc61a76616d90d9f"
-          width={200}
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Android_O_Preview_Logo.png/1024px-Android_O_Preview_Logo.png"
+          width={100}
           height={100}
           alt="POSPOS Logo"
         />
