@@ -1,10 +1,14 @@
 import './globals.css'
-import { Inter } from 'next/font/google'
 import Navbar from './components/navbar'
 import Footer from '././footer'
 
 
-const inter = Inter({ subsets: ['latin'] })
+import { Prompt } from 'next/font/google'
+ 
+const prompt = Prompt({
+  weight: '400',
+  subsets: ['latin'],
+})
 
 export const metadata = {
   title: 'Create Next App',
@@ -18,9 +22,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={prompt.className}>
         <Navbar/>
-        <div className=''>
+        <div className='container mx-auto '>
           {children}
         </div>
         
